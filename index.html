@@ -3,12 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="Assets/Img/JB logo.png">
     <script src="script.js" defer></script>
     <title>Janata Bank</title>
   </head>
   <body>
-
+    <!-- Outer wrapper -->
+    <section id="outer-wrapper" class="relative">
+      <!-- Hero and Nav -->
+      <section id="Nav-hero" class="relative">
+        <!-- Nav -->
+        <nav id="navigation" class="container bg-transparent duration-500 mx-auto absolute flex items-center justify-between z-50 top-0 left-[50%] translate-x-[-50%] px-8 py-4">
+          <!-- Hamberger icon -->
+          <div class="block w-9 h-6 icon cursor-pointer z-20" id="hamberger-icon">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+          </div>
+          <!-- Logo -->
+          <div class="h-18 w-16">
+            <img src="./Assets/Img/JB logo.png" alt="It's a logo" class="object-cover">
+          </div>
+          <!-- Location & Internet Banking -->
+          <div class="flex justify-between items-center gap-8">
+            <!-- Loaction Icon -->
+            <i class="fa-solid fa-location-dot text-3xl cursor-pointer location" id="location-icon"></i>
+            <!-- Internet Banking Button -->
+            <button class="bg-basecolor text-white text-xs md:text-base font-medium py-3 px-5 rounded-lg hover:bg-white hover:text-basecolor border-2 border-basecolor duration-500">Internet Banking</button>
+          </div>
+        </nav>
+        <!-- Hero -->
+        <section id="hero" class="relative container mx-auto w-full">
+          <!-- Hero Overlay -->
+          <div class="absolute top-0 left-0 h-full w-full bg-black opacity-70 z-40"></div>
+          <video src="./Assets/Video/Islamic Family.mp4" muted autoplay loop class="relative w-full object-cover z-30"></video>
+        </section>
+      </section>
+    </section>
   </body>
 </html>

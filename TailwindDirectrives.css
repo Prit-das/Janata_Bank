@@ -1,3 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* hamberger-icon */
+.icon{
+    position: relative;
+}
+.icon span{
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+    background-color: white;
+    transition: all 0.3s ease-out;
+    border-radius: 0px 10px 10px 0px;
+}
+.icon .bar2{
+    width: 85%;
+    transform: translateY(11px);
+}
+.icon .bar3{
+    width: 75%;
+    transform: translateY(22px);
+}
+.iconopen .bar1{
+    transform: rotate(45deg) translateY(10px) translateX(10px);
+    border-radius: 10px;
+}
+.iconopen .bar2{
+    width: 100%;
+    transform: rotate(-45deg) translateY(10px) translateX(-10px);
+    border-radius: 10px;
+}
+.iconopen .bar3{
+    display: none;
+}
+/* On mouse enter change the color of hamgerber bars */
+.barsInvert{
+    background-color: #0099CC;
+    transition: all 0.5s; 
+}
+/* Location icon */
+.location{
+    color: #fff;
+    transition: all 0.5s;
+}
+.location:hover{
+    color: #0099CC;
+}
+/* On mouse enter change the color of location icon */
+.locationInvert{
+    color: #0099CC;
+    transition: all 0.5s;
+}
+/* On mouse enter change the navigation background color */
+.navigation-background{
+    background-color: white;
+    transition: all 0.5s;
+}
