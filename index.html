@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- Outer wrapper -->
-    <section id="outer-wrapper" class="relative">
+    <section id="outer-wrapper" class="relative overflow-hidden">
       <!-- Hero and Nav -->
       <section id="Nav-hero" class="relative">
         <!-- Nav -->
@@ -33,14 +33,22 @@
             <!-- Loaction Icon -->
             <i class="fa-solid fa-location-dot text-3xl cursor-pointer location" id="location-icon"></i>
             <!-- Internet Banking Button -->
-            <button class="bg-basecolor text-white text-xs md:text-base font-medium py-3 px-5 rounded-lg hover:bg-white hover:text-basecolor border-2 border-basecolor duration-500">Internet Banking</button>
+            <button class="hidden md:block bg-basecolor text-white text-xs md:text-base font-medium py-2 px-4 rounded-lg hover:bg-white hover:text-basecolor border-2 border-basecolor duration-500">Internet Banking</button>
           </div>
         </nav>
+        <!-- Menu -->
+        <div class="absolute md:top-[5.1rem] top-[4.9rem] left-0 w-full md:w-1/2 h-fit z-50 py-8 px-4 bg-slate-300 -translate-x-full duration-150" id="mobileMenu">
+
+        </div>
+        <!-- Location -->
+        <div class="absolute md:top-[5.1rem] top-[4.9rem] right-0 w-full md:w-1/2 h-fit z-50 py-8 px-4 bg-slate-300 translate-x-[100%] duration-150" id="locationMenu">
+
+        </div>
         <!-- Hero -->
-        <section id="hero" class="relative container mx-auto w-full">
+        <section id="hero" class="relative">
           <!-- Hero Overlay -->
           <div class="absolute top-0 left-0 h-full w-full bg-black opacity-70 z-40"></div>
-          <video src="./Assets/Video/Islamic Family.mp4" muted autoplay loop class="relative w-full object-cover z-30"></video>
+          <video src="./Assets/Video/Islamic Family.mp4" muted autoplay loop class="relative w-full h-full object-cover z-30"></video>
         </section>
       </section>
     </section>

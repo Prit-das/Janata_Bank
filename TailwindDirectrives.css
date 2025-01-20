@@ -37,6 +37,17 @@
 .iconopen .bar3{
     display: none;
 }
+/* Menu */
+.trans{
+    transform: translateX(0);
+    transition: all 0.5s;
+}
+/* Location */
+.locationOpen{
+    transform: translateX(0);
+    transition: all 0.5s;
+}
+
 /* On mouse enter change the color of hamgerber bars */
 .barsInvert{
     background-color: #0099CC;
