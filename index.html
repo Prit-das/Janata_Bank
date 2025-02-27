@@ -17,7 +17,7 @@
       <!-- Hero and Nav -->
       <section id="Nav-hero" class="relative">
         <!-- Nav -->
-        <nav id="navigation" class="container bg-transparent duration-500 mx-auto absolute flex items-center justify-between z-50 top-0 left-[50%] translate-x-[-50%] px-8 py-4">
+        <nav id="navigation" class="w-screen bg-transparent duration-500 absolute flex items-center justify-between z-50 top-0 left-[50%] translate-x-[-50%] md:px-12 px-4 py-4">
           <!-- Hamberger icon -->
           <div class="block w-9 h-6 icon cursor-pointer z-20" id="hamberger-icon">
             <span class="bar1"></span>
@@ -26,7 +26,7 @@
           </div>
           <!-- Logo -->
           <div class="h-18 w-16">
-            <img src="./Assets/Img/JB logo.png" alt="It's a logo" class="object-cover">
+            <img src="./Assets/Img/JB-logo.png" alt="It's a logo" class="object-cover">
           </div>
           <!-- Location & Internet Banking -->
           <div class="flex justify-between items-center gap-8">
@@ -37,18 +37,119 @@
           </div>
         </nav>
         <!-- Menu -->
-        <div class="absolute md:top-[5.1rem] top-[4.9rem] left-0 w-full md:w-1/2 h-fit z-50 py-8 px-4 bg-slate-300 -translate-x-full duration-150" id="mobileMenu">
-
+        <div class="absolute md:top-[5.1rem] top-[4.9rem] left-0 w-full md:w-1/2 h-fit z-50 py-10 px-10 bg-white -translate-x-full duration-150" id="menu">
+          <!-- Menu Grid for Desktop -->
+          <div class="hidden lg:grid grid-cols-3 grid-rows-3 gap-2">
+            <!-- Grid First-col & First-Row -->
+            <div class="flex flex-col">
+              <h4 class="font-bold text-xl text-basecolor">Accounts</h4>
+              <a href="" class="font-semibold">Savings</a>
+              <a href="" class="font-semibold">Current</a>
+              <a href="" class="font-semibold">Deposits</a>
+            </div>
+            <!-- Grid Second-col & First-Row -->
+            <div class="flex flex-col">
+              <h4 class="font-bold text-xl text-basecolor">Cards</h4>
+              <a href="" class="font-semibold">Classic Visa Debit Card</a>
+              <a href="" class="font-semibold">Gold Visa Debit Card</a>
+              <a href="" class="font-semibold">Platinum Visa Card</a>
+            </div>
+            <!-- Grid Third-col & First-Row -->
+            <div class="row-span-4 flex flex-col justify-center items-center border-l-2 px-4">
+              <img src="./Assets/Img/JB_Logo_Slogan.png" alt="">
+            </div>
+            <!-- Grid First-col & Second-Row -->
+            <div class="flex flex-col">
+              <h4 class="font-bold text-xl text-basecolor">Loans</h4>
+              <a href="" class="font-semibold">Personal Loan</a>
+              <a href="" class="font-semibold">Business Loan</a>
+            </div>
+            <!-- Grid second-col & Second-Row -->
+            <div class="flex flex-col">
+              <h4 class="font-bold text-xl text-basecolor">Guarantee</h4>
+              <a href="" class="font-semibold">Employee</a>
+              <a href="" class="font-semibold">Commercial</a>
+            </div>
+            <!-- Grid First-col & Third-Row -->
+            <div class="flex flex-col">
+              <h4 class="font-bold text-xl text-basecolor">Services</h4>
+              <a href="" class="font-semibold">WPS</a>
+              <a href="" class="font-semibold">Remittance</a>
+            </div>
+            <!-- Grid Second-col & Third-Row -->
+            <div class="flex flex-col">
+              <h4 class="font-bold text-xl text-basecolor">About Us</h4>
+              <a href="#" class="font-semibold">Corporate Governance</a>
+              <a href="#" class="font-semibold">Our Brunches</a>
+              <a href="#" class="font-semibold">Awards</a>
+            </div>
+          </div>
+          <!-- Contact us for Desktop -->
+          <a href="#" class="hidden lg:visible font-bold text-xl text-basecolor">Contact Us</a>
         </div>
-        <!-- Location -->
-        <div class="absolute md:top-[5.1rem] top-[4.9rem] right-0 w-full md:w-1/2 h-fit z-50 py-8 px-4 bg-slate-300 translate-x-[100%] duration-150" id="locationMenu">
 
+        <!-- Branch & ATM Location -->
+        <div class="absolute md:top-[5.1rem] top-[4.9rem] right-0 w-full md:w-1/2 h-fit z-50 py-8 px-10 bg-white translate-x-[100%] duration-150" id="locationMenu">
+          <!-- Branch Location Grid Heading for Desktop-->
+          <h4 class="font-bold text-2xl text-basecolor">Branch Location</h4>
+          <!-- Branch Location Grid for Desktop-->
+          <div class="hidden lg:grid grid-cols-2 grid-rows-2 items-start border-b-2 gap-2 py-6">
+            <!-- Grid First-col & Second-Row -->
+            <div class="flex flex-col">
+              <h4 class="font-bold text-xl text-basecolor">Abu Dhabi</h4>
+              <p class="font-semibold text-sm">Ground Floor, Al Saman Tower, Beside Capital Park, Plot C-7, Sector E-8, Hamdan Street</p>
+              <a href="#" class="text-basecolor">view on map</a>
+            </div>
+            <!-- Grid Second-col & Second-Row -->
+            <div class="flex flex-col">
+              <h4 class="font-bold text-xl text-basecolor">Dubai</h4>
+              <p class="font-semibold text-sm">Ground Floor, Rolex Tower/Deira Twin Tower, Baniyas Road, Deira</p>
+              <a href="#" class="text-basecolor">view on map</a>
+            </div>
+            <!-- Grid First-col & Second-Row -->
+            <div class="flex flex-col">
+              <h4 class="font-bold text-xl text-basecolor">Al Ain</h4>
+              <p class="font-semibold text-sm">Sk. Khalifa Bin Mohd., Al-Nahyan Building, Main Market Centre, Main Street</p>
+              <a href="#" class="text-basecolor" >view on map</a>
+            </div>
+            <!-- Grid First-col & Second-Row -->
+            <div class="flex flex-col">
+              <h4 class="font-bold text-xl text-basecolor">Sharjah</h4>
+              <p class="font-semibold text-sm">Sheikha Mahra Building, Al Khaleej Square, Opp.Swissbel(Ex-Rotana) Hotel, Arabian Guld Street, Al Mujarrah</p>
+              <a href="#" class="text-basecolor">view on map</a>
+            </div>
+          </div>
+          <!-- ATM Location Grid Heading -->
+          <h4 class="font-bold text-2xl text-basecolor mt-2">ATM Location</h4>
+          <!-- ATM Location Grid -->
+          <div class="hidden lg:grid grid-cols-2 grid-rows-2 items-start gap-2 py-6">
+            <!-- Grid First-col & Second-Row -->
+            <div class="flex flex-col">
+              <h4 class="font-bold text-xl text-slate-500">Abu Dhabi</h4>
+              <a href="#" class="text-basecolor">view on map</a>
+            </div>
+            <!-- Grid Second-col & Second-Row -->
+            <div class="flex flex-col">
+              <h4 class="font-bold text-xl text-slate-500">Dubai</h4>
+              <a href="#" class="text-basecolor">view on map</a>
+            </div>
+            <!-- Grid First-col & Second-Row -->
+            <div class="flex flex-col">
+              <h4 class="font-bold text-xl text-slate-500">Al Ain</h4>
+              <a href="#" class="text-basecolor" >view on map</a>
+            </div>
+            <!-- Grid First-col & Second-Row -->
+            <div class="flex flex-col">
+              <h4 class="font-bold text-xl text-slate-500">Sharjah</h4>
+              <a href="#" class="text-basecolor">view on map</a>
+            </div>
+          </div>
         </div>
         <!-- Hero -->
         <section id="hero" class="relative">
           <!-- Hero Overlay -->
-          <div class="absolute top-0 left-0 h-full w-full bg-black opacity-70 z-40"></div>
-          <video src="./Assets/Video/Islamic Family.mp4" muted autoplay loop class="relative w-full h-full object-cover z-30"></video>
+          <div class="absolute top-0 left-0 h-full w-full bg-black opacity-40 z-40"></div>
+          <video src="./Assets/Video/Islamic-Family.mp4" muted autoplay loop class="relative w-full h-full object-cover z-30"></video>
         </section>
       </section>
     </section>
