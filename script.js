@@ -1,21 +1,25 @@
 // ------------------------Variables & Targets----------------------------------
-// Js for Blur Screen
-const blurOverlay = document.querySelector('#outer-wrapper')
 
-// Js for hamberger icon
+// Variable for hamberger icon
 const hamberger = document.querySelector('#hamberger-icon');
 
-// Js for location icon
+// Variable for location icon
 const locationIcon = document.querySelector('#location-icon');
 
-// Js for hamberger bar
+// Variable for hamberger bar
 const bars = hamberger.querySelectorAll('span');
 
-// Js for Mobile menu
+// Variable for Desktop menu
 const menu = document.querySelector('#menu');
 
-// Js for Location menu
+// Variable for Desktop Location menu
 const locationMenu = document.querySelector('#locationMenu');
+
+// Variable for Mobile Location menu
+const branchForMob = document.querySelector('#branchForMob');
+
+// Variable for Mobile Location menu
+const ATMForMob = document.querySelector('#ATMForMob');
 
 // ------------------------------------------------------------------
 
@@ -75,5 +79,31 @@ document.addEventListener('click', function (event) {
         locationMenu.classList.remove('locationOpen');
     }
 });
+
+// Js for when user will click atm location for mobile devices
+ATMForMob.addEventListener('click', function (){
+    if (branchMobList.classList.contains('flex')) {
+        ATMForMob.style.color = '#0099CC'
+        branchForMob.style.color = '#64748b'
+        branchMobList.classList.toggle('hidden')
+        ATMMobList.classList.add('flex')
+        ATMMobList.classList.remove('hidden')
+    }
+    else{
+        ATMMobList.classList.add('hidden')
+    }
+})
+
+// Js for when user will click branch location for mobile devices
+branchForMob.addEventListener('click', function (){
+    if (ATMMobList.classList.contains('flex')) {
+        ATMForMob.style.color = '#64748b'
+        branchForMob.style.color = '#0099CC'
+        branchMobList.classList.toggle('hidden')
+        ATMMobList.classList.remove('flex')
+        ATMMobList.classList.add('hidden')
+    }
+})
+
 
 // ------------------------------------------------------------------
