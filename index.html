@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="Assets/Img/JB logo.png">
     <script src="script.js" defer></script>
@@ -13,7 +14,7 @@
   </head>
   <body>
     <!-- Outer wrapper -->
-    <section id="outer-wrapper" class="relative overflow-hidden">
+    <section id="outer-wrapper" class="relative overflow-x-hidden">
       <!-- Hero and Nav -->
       <section id="Nav-hero" class="relative">
         <!-- Nav -->
@@ -41,54 +42,65 @@
         </nav>
         <!-- Menu -->
         <div class="absolute md:top-[4.6rem] top-[4.3rem] left-0 w-full md:w-1/2 h-fit z-50 py-10 px-10 bg-white -translate-x-full duration-150" id="menu">
-          <!-- Menu Grid for Desktop -->
-          <div class="hidden lg:grid grid-cols-3 grid-rows-3 gap-2">
-            <!-- Grid First-col & First-Row -->
-            <div class="flex flex-col">
-              <h4 class="font-bold text-xl text-basecolor">Accounts</h4>
-              <a href="" class="font-semibold">Savings</a>
-              <a href="" class="font-semibold">Current</a>
-              <a href="" class="font-semibold">Deposits</a>
+          <!-- Desktop Menu -->
+          <div class="hidden lg:block">
+            <!-- Menu Grid for Desktop -->
+            <div class="lg:grid grid-cols-3 grid-rows-3 gap-2">
+              <!-- Grid First-col & First-Row -->
+              <div class="flex flex-col">
+                <h4 class="font-bold text-xl text-basecolor">Accounts</h4>
+                <a href="" class="font-semibold">Savings</a>
+                <a href="" class="font-semibold">Current</a>
+                <a href="" class="font-semibold">Deposits</a>
+              </div>
+              <!-- Grid Second-col & First-Row -->
+              <div class="flex flex-col">
+                <h4 class="font-bold text-xl text-basecolor">Cards</h4>
+                <a href="" class="font-semibold">Classic Visa Debit Card</a>
+                <a href="" class="font-semibold">Gold Visa Debit Card</a>
+                <a href="" class="font-semibold">Platinum Visa Card</a>
+              </div>
+              <!-- Grid Third-col & First-Row -->
+              <div class="row-span-4 flex flex-col justify-center items-center border-l-2 px-4">
+                <img src="./Assets/Img/JB_Logo_Slogan.png" alt="">
+              </div>
+              <!-- Grid First-col & Second-Row -->
+              <div class="flex flex-col">
+                <h4 class="font-bold text-xl text-basecolor">Loans</h4>
+                <a href="" class="font-semibold">Personal Loan</a>
+                <a href="" class="font-semibold">Business Loan</a>
+              </div>
+              <!-- Grid second-col & Second-Row -->
+              <div class="flex flex-col">
+                <h4 class="font-bold text-xl text-basecolor">Guarantee</h4>
+                <a href="" class="font-semibold">Employee</a>
+                <a href="" class="font-semibold">Commercial</a>
+              </div>
+              <!-- Grid First-col & Third-Row -->
+              <div class="flex flex-col">
+                <h4 class="font-bold text-xl text-basecolor">Services</h4>
+                <a href="" class="font-semibold">WPS</a>
+                <a href="" class="font-semibold">Remittance</a>
+              </div>
+              <!-- Grid Second-col & Third-Row -->
+              <div class="flex flex-col">
+                <h4 class="font-bold text-xl text-basecolor">About Us</h4>
+                <a href="#" class="font-semibold">Corporate Governance</a>
+                <a href="#" class="font-semibold">Our Brunches</a>
+                <a href="#" class="font-semibold">Awards</a>
+              </div>
             </div>
-            <!-- Grid Second-col & First-Row -->
-            <div class="flex flex-col">
-              <h4 class="font-bold text-xl text-basecolor">Cards</h4>
-              <a href="" class="font-semibold">Classic Visa Debit Card</a>
-              <a href="" class="font-semibold">Gold Visa Debit Card</a>
-              <a href="" class="font-semibold">Platinum Visa Card</a>
-            </div>
-            <!-- Grid Third-col & First-Row -->
-            <div class="row-span-4 flex flex-col justify-center items-center border-l-2 px-4">
-              <img src="./Assets/Img/JB_Logo_Slogan.png" alt="">
-            </div>
-            <!-- Grid First-col & Second-Row -->
-            <div class="flex flex-col">
-              <h4 class="font-bold text-xl text-basecolor">Loans</h4>
-              <a href="" class="font-semibold">Personal Loan</a>
-              <a href="" class="font-semibold">Business Loan</a>
-            </div>
-            <!-- Grid second-col & Second-Row -->
-            <div class="flex flex-col">
-              <h4 class="font-bold text-xl text-basecolor">Guarantee</h4>
-              <a href="" class="font-semibold">Employee</a>
-              <a href="" class="font-semibold">Commercial</a>
-            </div>
-            <!-- Grid First-col & Third-Row -->
-            <div class="flex flex-col">
-              <h4 class="font-bold text-xl text-basecolor">Services</h4>
-              <a href="" class="font-semibold">WPS</a>
-              <a href="" class="font-semibold">Remittance</a>
-            </div>
-            <!-- Grid Second-col & Third-Row -->
-            <div class="flex flex-col">
-              <h4 class="font-bold text-xl text-basecolor">About Us</h4>
-              <a href="#" class="font-semibold">Corporate Governance</a>
-              <a href="#" class="font-semibold">Our Brunches</a>
-              <a href="#" class="font-semibold">Awards</a>
+            <!-- Contact us for Desktop -->
+            <a href="#" class="font-bold text-xl text-basecolor">Contact Us</a>
+          </div>
+          <!-- Mobile Menu -->
+          <div class="flex justify-center items-start">
+            <!-- Account Section -->
+            <div class="w-full flex justify-between items-center">
+              <a href="#" class="font-bold text-lg text-basecolor">Account</a>
+              <i class="bi bi-plus-circle text-basecolor"></i>
             </div>
           </div>
-          <!-- Contact us for Desktop -->
-          <a href="#" class="hidden lg:visible font-bold text-xl text-basecolor">Contact Us</a>
         </div>
 
         <!-- Branch & ATM Location -->
