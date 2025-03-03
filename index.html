@@ -18,7 +18,7 @@
       <!-- Hero and Nav -->
       <section id="Nav-hero" class="relative">
         <!-- Nav -->
-        <nav id="navigation" class="w-screen bg-transparent duration-500 absolute flex items-center justify-between z-50 top-0 left-[50%] translate-x-[-50%] md:px-12 px-4 py-4">
+        <nav id="navigation" class="w-screen bg-transparent duration-500 absolute flex items-center justify-between z-50 top-0 left-[50%] translate-x-[-50%] cursor-pointer md:px-12 px-4 py-4">
           <!-- Hamberger parent -->
           <div class="flex-1">
             <!-- Hamberger icon -->
@@ -94,11 +94,33 @@
             <a href="#" class="font-bold text-xl text-basecolor">Contact Us</a>
           </div>
           <!-- Mobile Menu -->
-          <div class="flex justify-center items-start">
-            <!-- Account Section -->
-            <div class="w-full flex justify-between items-center">
-              <a href="#" class="font-bold text-lg text-basecolor">Account</a>
-              <i class="bi bi-plus-circle text-basecolor"></i>
+          <div class="flex flex-col justify-center items-start">
+            <!-- Account Section Child & Heading and Icon -->
+            <div class="w-full">
+              <!-- Account section Heading and Icon -->
+              <div class="flex justify-between items-center" id="accountSection">
+                <a href="#" class="font-bold text-lg text-basecolor">Account</a>
+                <i class="bi bi-plus-circle-fill text-basecolor font-bold text-xl cursor-pointer"></i>
+              </div>
+              <!-- Account section child -->
+              <div class="max-h-96 flex flex-col gap-3 translate-y-0 duration-300 py-3" id="accountChild">
+                <a href="" class="font-semibold">Savings</a>
+                <a href="" class="font-semibold">Current</a>
+                <a href="" class="font-semibold">Deposits</a>              
+              </div>
+            </div>
+            <!-- Loan Section Child & Heading and Icon -->
+            <div class="w-full">
+              <!-- Account section Heading and Icon -->
+              <div class="flex justify-between items-center" id="loanSection">
+                <a href="#" class="font-bold text-lg text-basecolor">Loans</a>
+                <i class="bi bi-plus-circle-fill text-basecolor font-bold text-xl cursor-pointer"></i>
+              </div>
+              <!-- Account section child -->
+              <div class="max-h-96 flex flex-col gap-3 translate-y-0 duration-300 py-3 hideSection" id="loanChild">
+                <a href="" class="font-semibold">Personal Loan</a>
+                <a href="" class="font-semibold">Business Loan</a>           
+              </div>
             </div>
           </div>
         </div>
@@ -230,6 +252,8 @@
           <video src="./Assets/Video/Islamic-Family.mp4" muted autoplay loop class="relative w-full h-[60vh] lg:h-full object-cover z-30"></video>
         </section>
       </section>
+      <!-- Product -->
+      <section class="h-[100vh] bg-slate-200"></section>
     </section>
   </body>
 </html>

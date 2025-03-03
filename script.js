@@ -15,6 +15,12 @@ const menu = document.querySelector('#menu');
 // Variable for Desktop Location menu
 const locationMenu = document.querySelector('#locationMenu');
 
+// Variable for Mobile Account menu
+const accountSection = document.querySelector('#accountSection');
+
+// Variable for Mobile Account menu
+const loanSection = document.querySelector('#loanSection');
+
 // Variable for Mobile Location menu
 const branchForMob = document.querySelector('#branchForMob');
 
@@ -80,6 +86,33 @@ document.addEventListener('click', function (event) {
     }
 });
 
+// Js for mobile account & loan menu switch icons
+function toggleSection(sectionId, childId) {
+    let section = document.getElementById(sectionId);
+    let child = document.getElementById(childId);
+    let icon = section.querySelector("i");
+
+    // Toggle visibility of the child section
+    child.classList.toggle("hideSection");
+
+    // Check if the section is open or closed and set the correct icon
+    if (child.classList.contains("hideSection")) {
+        icon.classList.replace("bi-dash-circle-fill", "bi-plus-circle-fill");
+    } else {
+        icon.classList.replace("bi-plus-circle-fill", "bi-dash-circle-fill");
+    }
+}
+
+// Event listeners for Account Section
+document.getElementById("accountSection").addEventListener("click", function () {
+    toggleSection("accountSection", "accountChild");
+});
+
+// Event listeners for Loan Section
+document.getElementById("loanSection").addEventListener("click", function () {
+    toggleSection("loanSection", "loanChild");
+});
+
 // Js for when user will click atm location for mobile devices
 ATMForMob.addEventListener('click', function (){
     if (branchMobList.classList.contains('flex')) {
@@ -104,6 +137,4 @@ branchForMob.addEventListener('click', function (){
         ATMMobList.classList.add('hidden')
     }
 })
-
-
 // ------------------------------------------------------------------
