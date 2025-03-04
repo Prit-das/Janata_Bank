@@ -747,10 +747,6 @@ video {
   overflow-x: hidden;
 }
 
-.overflow-y-hidden {
-  overflow-y: hidden;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -765,6 +761,10 @@ video {
 
 .border-l-2 {
   border-left-width: 2px;
+}
+
+.border-r-4 {
+  border-right-width: 4px;
 }
 
 .border-basecolor {
@@ -841,6 +841,16 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -871,6 +881,11 @@ video {
   line-height: 1rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -896,10 +911,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.opacity-100 {
-  opacity: 1;
 }
 
 .opacity-40 {
@@ -1009,12 +1020,6 @@ video {
 
 /* Hiding mobile menu sections */
 
-/* .hideSection{
-    transform: translateY(-120%);
-    transition: all 0.3s;
-    display: none;
-} */
-
 .hideSection {
   max-height: 0vh;
   opacity: 0;
@@ -1022,6 +1027,13 @@ video {
   transform: translateY(-10px);
   /* Slight upward shift for smooth effect */
   transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hovering effect for all <a> */
+
+a:hover{
+  color: #0099CC;
+  transition: all 0.5s;
 }
 
 .hover\:bg-white:hover {
@@ -1077,5 +1089,10 @@ video {
 
   .lg\:h-full {
     height: 100%;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }

@@ -1,5 +1,11 @@
 // ------------------------Variables & Targets----------------------------------
 
+// Theme color variables
+const blue = '#0099CC';
+const white = '#ffff';
+const slate = '#64748b';
+
+
 // Variable for hamberger icon
 const hamberger = document.querySelector('#hamberger-icon');
 
@@ -21,6 +27,18 @@ const accountSection = document.querySelector('#accountSection');
 // Variable for Mobile Account menu
 const loanSection = document.querySelector('#loanSection');
 
+// Variable for Mobile Account menu
+const cardSection = document.querySelector('#cardSection');
+
+// Variable for Mobile Account menu
+const guaranteeSection = document.querySelector('#guaranteeSection');
+
+// Variable for Mobile Account menu
+const servicesSection = document.querySelector('#servicesSection');
+
+// Variable for Mobile Account menu
+const aboutSection = document.querySelector('#aboutSection');
+
 // Variable for Mobile Location menu
 const branchForMob = document.querySelector('#branchForMob');
 
@@ -37,7 +55,7 @@ navigation.addEventListener('mouseenter', function (){
     navigation.classList.add('navigation-background');
     locationIcon.classList.add('locationInvert');
     bars.forEach((span) => {
-        span.style.backgroundColor = '#0099CC'; // Change color to blue
+        span.style.backgroundColor = blue; // Change color to blue
     });
     
 })
@@ -46,7 +64,7 @@ navigation.addEventListener('mouseleave', function (){
     navigation.classList.remove('navigation-background');
     locationIcon.classList.remove('locationInvert');
     bars.forEach((span) => {
-        span.style.backgroundColor = '#ffff'; // Change color to white
+        span.style.backgroundColor = white; // Change color to white
     });
 })
 // Js for Menu & Location
@@ -104,20 +122,40 @@ function toggleSection(sectionId, childId) {
 }
 
 // Event listeners for Account Section
-document.getElementById("accountSection").addEventListener("click", function () {
+accountSection.addEventListener("click", function () {
     toggleSection("accountSection", "accountChild");
 });
 
 // Event listeners for Loan Section
-document.getElementById("loanSection").addEventListener("click", function () {
+loanSection.addEventListener("click", function () {
     toggleSection("loanSection", "loanChild");
+});
+
+// Event listeners for Loan Section
+cardSection.addEventListener("click", function () {
+    toggleSection("cardSection", "cardChild");
+});
+
+// Event listeners for guatantee Section
+guaranteeSection.addEventListener("click", function () {
+    toggleSection("guaranteeSection", "guaranteeChild");
+});
+
+// Event listeners for services Section
+servicesSection.addEventListener("click", function () {
+    toggleSection("servicesSection", "servicesChild");
+});
+
+// Event listeners for about Section
+aboutSection.addEventListener("click", function () {
+    toggleSection("aboutSection", "aboutChild");
 });
 
 // Js for when user will click atm location for mobile devices
 ATMForMob.addEventListener('click', function (){
     if (branchMobList.classList.contains('flex')) {
-        ATMForMob.style.color = '#0099CC'
-        branchForMob.style.color = '#64748b'
+        ATMForMob.style.color = blue
+        branchForMob.style.color = slate
         branchMobList.classList.toggle('hidden')
         ATMMobList.classList.add('flex')
         ATMMobList.classList.remove('hidden')
@@ -130,8 +168,8 @@ ATMForMob.addEventListener('click', function (){
 // Js for when user will click branch location for mobile devices
 branchForMob.addEventListener('click', function (){
     if (ATMMobList.classList.contains('flex')) {
-        ATMForMob.style.color = '#64748b'
-        branchForMob.style.color = '#0099CC'
+        ATMForMob.style.color = slate
+        branchForMob.style.color = blue
         branchMobList.classList.toggle('hidden')
         ATMMobList.classList.remove('flex')
         ATMMobList.classList.add('hidden')
